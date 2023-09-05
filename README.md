@@ -6,8 +6,7 @@ Tenemos 2 tablas básicas: usuario y dirección. Utiliza el framework FastAPI y 
 2. Recuperar usuarios por país.
 
 Para la comunicación entre servicios, se pueden utilizar llamadas REST o gRPC para:
-- Obtener información de usuario.
-- Código de prueba de cliente de ejemplo.
+- Obtener información de usuario / Código de prueba de cliente de ejemplo.
 
 ## Configuración del Proyecto
 A continuación se muestra una guía básica para configurar y ejecutar el proyecto:
@@ -27,7 +26,27 @@ A continuación se muestra una guía básica para configurar y ejecutar el proye
 `uvicorn main:app --reload`
 
 ### Uso
-- Para crear un usuario, realiza una solicitud POST a `/api/users` con los datos del usuario en el cuerpo de la solicitud en formato JSON.
+- Para crear un usuario, realiza una solicitud POST a `/api/users` con los datos del usuario en el cuerpo de la solicitud en formato JSON. El siguiente es un ejemplo:
+`
+{
+    "id": 5,
+    "first_name": "Lorena",
+    "last_name": "Lopez",
+    "mail": "lorelo@example.com",
+    "password": "password123",
+    "addresses": [
+        {
+            "id": 5,
+            "address_1": "123 St 456",
+            "address_2": "Apt 12",
+            "city": "Tampa",
+            "state": "Florida",
+            "zip": "033101",
+            "country": "USA"
+        }
+    ]
+}`
+
 - Para recuperar usuarios por país, realiza una solicitud GET a `/api/users/{country}`.
 
 **Paso 1: Ejecuta tu aplicación FastAPI**
