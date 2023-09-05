@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from models import User, Address
+import pickle
 
 app = FastAPI()
 
-# Simula una base de datos en memoria
 db = {
     "users": [],
     "addresses": []
@@ -12,11 +12,15 @@ db = {
 @app.post("/users/")
 def create_user(user: User):
     db["users"].append(user)
-    return {"message": "Usuario creado con éxito"}
+    with open('usuarios.pkl', 'wb') as archivo:
+        pickle.dump(db, archivo)
+    return {"message": "User successfully created"}
 
 @app.get("/users/by_country/")
 def get_users_by_country(country: str):
-    users = [user for user in db["users"] if any(addr.pais == country for addr in user.direcciones)]
+    with open('usuarios.pkl', 'rb') as archivo:
+        db = pickle.load(archivo)
+    users = [user for user in db["users"] if any(addr.country == country for addr in user.addresses)]
     return users
 
 if __name__ == "__main__":

@@ -3,17 +3,17 @@ from typing import List
 
 class Address(BaseModel):
     id: int
-    direccion_1: str
-    direccion_2: str
-    ciudad: str
-    estado: str
-    codigo_postal: str
-    pais: str
+    address_1: str
+    address_2: str
+    city: str
+    state: str
+    zip: str
+    country: str
 
 class User(BaseModel):
     id: int
-    nombre: str
-    apellidos: str
-    correo_electronico: str
-    contrasena: str
-    direcciones: List[Address]
+    first_name: str
+    last_name: str
+    mail: str
+    password: str
+    addresses: List[Address]
