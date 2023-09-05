@@ -27,7 +27,8 @@ A continuación se muestra una guía básica para configurar y ejecutar el proye
 ### Uso
 - Para crear un usuario, realiza una solicitud POST a `/api/users` con los datos del usuario en el cuerpo de la solicitud en formato JSON. El siguiente es un ejemplo:
 
-```{
+```
+{
     "id": 5,
     "first_name": "Lorena",
     "last_name": "Lopez",
