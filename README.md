@@ -52,7 +52,7 @@ Below is a basic guide to configure and run the project:
 **Step 1: Run your FastAPI application**.
 Before testing your application with Postman, make sure your FastAPI application is running. To run it, open a terminal, navigate to the root directory of your project and run the following command (make sure the dependencies are installed and the server is running):
 
-````
+```
 bash
 uvicorn main:app --reload
 ```
