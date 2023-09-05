@@ -85,5 +85,5 @@ Open the Postman application on your system. If you do not already have Postman 
 ## Contact:
 - Jeisson Andres Castaño Aguirre
 - Mail: jeacastanoag@unal.edu.co
-- Estadístico de la Universidad Nacional de Colombia Sede Medellín
-- MBA del Tecnológico de Monterrey
+- Estadístico - Universidad Nacional de Colombia Sede Medellín
+- Master of Business Administration (MBA) - Tecnológico de Monterrey
