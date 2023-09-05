@@ -49,7 +49,7 @@ Below is a basic guide to configure and run the project:
 }
 ```
 
-**Step 1: Run your FastAPI application**.
+**Step 1: Run your FastAPI application**
 Before testing your application with Postman, make sure your FastAPI application is running. To run it, open a terminal, navigate to the root directory of your project and run the following command (make sure the dependencies are installed and the server is running):
 
 ```
@@ -59,27 +59,27 @@ uvicorn main:app --reload
 
 This will start your application at `http://127.0.0.1:8000`.
 
-**Step 2: Open Postman
+**Step 2: Open Postman**
 Open the Postman application on your system. If you do not already have Postman installed, you can download and install it from [https://www.postman.com/](https://www.postman.com/).
 
-**Step 3: Create a new application in Postman**.
+**Step 3: Create a new application in Postman**
 - In Postman, create a new request by clicking on "New" in the upper left corner and select "Request".
 
-**Step 4: Configure the request
+**Step 4: Configure the request**
 - Assign a descriptive name to the request in the "Request Name" field.
 - Select the appropriate HTTP method (GET, POST) from the "HTTP Method" drop-down menu.
 - In the URL bar, enter the full URL of the route you want to test in your FastAPI application. For example, if you want to test the `/users` path, enter `http://127.0.0.1:8000/users`.
 
-**Step 5: Add parameters and data (if necessary)**.
+**Step 5: Add parameters and data (if necessary)**
 - If your request requires parameters or data in the body of the request, you can configure them in the corresponding tabs at the bottom of the Postman window.
 
-**Step 6: Send the request
+**Step 6: Send the request**
 - Click the "Send" button to send the request to your FastAPI application.
 
 **Step 7: Observe the response**
 - At the bottom of the Postman window, you will see the response from your FastAPI application. This will include the HTTP status code, JSON response, or other relevant data.
 
-**Step 8: Analyze the response**.
+**Step 8: Analyze the response**
 - Examine the response to ensure that your API is working correctly and that the data is as expected.
 
 ## Contact:
