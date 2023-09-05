@@ -81,3 +81,8 @@ Abre la aplicación Postman en tu sistema. Si aún no tienes Postman instalado, 
 
 **Paso 8: Analiza la respuesta**
 - Examina la respuesta para asegurarte de que tu API esté funcionando correctamente y que los datos sean los esperados.
+
+## Contacto:
+- Jeisson Andres Castaño Aguirre
+- Estadístico Universidad Nacional de Colombia Sede Medellín
+- MBA Tecnológico de Monterrey
