@@ -20,23 +20,23 @@ A continuación se muestra una guía básica para configurar y ejecutar el proye
 
 1. Clona el repositorio.
 
-git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+`git clone https://github.com/tu-usuario/nombre-del-proyecto.git`
 
 
 2. Ve al directorio del proyecto.
 
-cd nombre-del-proyecto
+`cd nombre-del-proyecto`
 
 3. Instala las dependencias.
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 ### Ejecución
 
 1. Inicia el servidor FastAPI.
 
-uvicorn main:app --reload
+`uvicorn main:app --reload`
 
 
 ### Uso
