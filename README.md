@@ -1,3 +1,80 @@
+# Desafío de Entrevista para Llevar a Casa
+
+Tenemos 2 tablas básicas: usuario y dirección. Utiliza el framework FastAPI y crea servicios REST para permitir la administración de usuarios. Eres libre de usar cualquier tipo de dato adecuado.
+
+## Requisitos de la API REST:
+
+1. Crear usuarios con parámetros de entrada: usuario (id, nombre, apellido, correo electrónico y contraseña), y direcciones (id, dirección_1, dirección_2, ciudad, estado, código postal, país).
+2. Recuperar usuarios por país.
+
+Para la comunicación entre servicios, se pueden utilizar llamadas REST o gRPC para:
+
+- Obtener información de usuario.
+- Código de prueba de cliente de ejemplo.
+
+## Configuración del Proyecto
+
+A continuación se muestra una guía básica para configurar y ejecutar el proyecto:
+
+### Instalación
+
+1. Clona el repositorio.
+
+git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+
+
+2. Ve al directorio del proyecto.
+
+cd nombre-del-proyecto
+
+3. Instala las dependencias.
+
+pip install -r requirements.txt
+
+
+### Ejecución
+
+1. Inicia el servidor FastAPI.
+
+uvicorn main:app --reload
+
+
+### Uso
+
+- Para crear un usuario, realiza una solicitud POST a `/api/users` con los datos del usuario en el cuerpo de la solicitud en formato JSON.
+
+- Para recuperar usuarios por país, realiza una solicitud GET a `/api/users/{country}`.
+
+### Comunicación entre Servicios
+
+Para comunicarse con otros servicios, puedes usar llamadas REST o gRPC. Aquí tienes un ejemplo de cómo obtener información de usuario utilizando REST:
+
+```python
+import requests
+
+url = 'http://ruta-del-servicio/api/user-info/{user_id}'
+response = requests.get(url)
+data = response.json()
+print(data)
+
+Contribución
+Si deseas contribuir a este proyecto, sigue estos pasos:
+
+Haz un fork del repositorio.
+Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+Realiza tus cambios y haz commit (git commit -am 'Agrega nueva funcionalidad').
+Haz push a la rama (git push origin feature/nueva-funcionalidad).
+Abre una solicitud de extracción en GitHub.
+Licencia
+Este proyecto está bajo la Licencia [nombre_de_la_licencia]. Consulta el archivo LICENSE.md para obtener más detalles.
+
+Contacto
+Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros en [correo electrónico] o a través de Twitter.
+
+
+Recuerda reemplazar `nombre-del-proyecto`, `tu-usuario`, `ruta-del-servicio`, y otros marcadores de posición con información específica de tu proyecto. También, asegúrate de proporcionar detalles adicionales sobre la licencia utilizada y la estructura real de tu proyecto si es necesario.
+
+
 # Take-Home Interview Challenge
 
 Para probar la aplicación FastAPI con Postman, sigue estos pasos:
