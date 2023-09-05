@@ -5,8 +5,7 @@ Tenemos 2 tablas básicas: usuario y dirección. Utiliza el framework FastAPI y 
 1. Crear usuarios con parámetros de entrada: usuario (id, nombre, apellido, correo electrónico y contraseña), y direcciones (id, dirección_1, dirección_2, ciudad, estado, código postal, país).
 2. Recuperar usuarios por país.
 
-Para la comunicación entre servicios, se pueden utilizar llamadas REST o gRPC para:
-- Obtener información de usuario / Código de prueba de cliente de ejemplo.
+Para la comunicación entre servicios, se pueden utilizar llamadas REST o gRPC para: Obtener información de usuario / Código de prueba de cliente de ejemplo.
 
 ## Configuración del Proyecto
 A continuación se muestra una guía básica para configurar y ejecutar el proyecto:
