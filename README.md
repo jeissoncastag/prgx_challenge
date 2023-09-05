@@ -3,7 +3,7 @@ We have 2 basic tables: user and address. Use the FastAPI framework and create R
 
 ## REST API requirements:
 1. create users with input parameters: user (id, first_name, last_name, email and password), and addresses (id, address_1, address_2, city, state, zip code, country).
-Retrieve users by country.
+2. Retrieve users by country.
 
 For inter-service communication, REST or gRPC calls can be used to: Retrieve user information / Sample client test code.
 
@@ -52,7 +52,8 @@ Below is a basic guide to configure and run the project:
 **Step 1: Run your FastAPI application**.
 Before testing your application with Postman, make sure your FastAPI application is running. To run it, open a terminal, navigate to the root directory of your project and run the following command (make sure the dependencies are installed and the server is running):
 
-````bash
+````
+bash
 uvicorn main:app --reload
 ```
 
