@@ -45,39 +45,6 @@ A continuación se muestra una guía básica para configurar y ejecutar el proye
 
 - Para recuperar usuarios por país, realiza una solicitud GET a `/api/users/{country}`.
 
-### Comunicación entre Servicios
-
-Para comunicarse con otros servicios, puedes usar llamadas REST o gRPC. Aquí tienes un ejemplo de cómo obtener información de usuario utilizando REST:
-
-```python
-import requests
-
-url = 'http://ruta-del-servicio/api/user-info/{user_id}'
-response = requests.get(url)
-data = response.json()
-print(data)
-
-Contribución
-Si deseas contribuir a este proyecto, sigue estos pasos:
-
-Haz un fork del repositorio.
-Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
-Realiza tus cambios y haz commit (git commit -am 'Agrega nueva funcionalidad').
-Haz push a la rama (git push origin feature/nueva-funcionalidad).
-Abre una solicitud de extracción en GitHub.
-Licencia
-Este proyecto está bajo la Licencia [nombre_de_la_licencia]. Consulta el archivo LICENSE.md para obtener más detalles.
-
-Contacto
-Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros en [correo electrónico] o a través de Twitter.
-
-
-Recuerda reemplazar `nombre-del-proyecto`, `tu-usuario`, `ruta-del-servicio`, y otros marcadores de posición con información específica de tu proyecto. También, asegúrate de proporcionar detalles adicionales sobre la licencia utilizada y la estructura real de tu proyecto si es necesario.
-
-
-# Take-Home Interview Challenge
-
-Para probar la aplicación FastAPI con Postman, sigue estos pasos:
 
 **Paso 1: Ejecuta tu aplicación FastAPI**
 
@@ -101,7 +68,7 @@ Abre la aplicación Postman en tu sistema. Si aún no tienes Postman instalado, 
 
 - Asigna un nombre descriptivo a la solicitud en el campo "Request Name".
 
-- Selecciona el método HTTP adecuado (GET, POST, PUT, etc.) en el menú desplegable "HTTP Method".
+- Selecciona el método HTTP adecuado (GET, POST) en el menú desplegable "HTTP Method".
 
 - En la barra de URL, ingresa la URL completa de la ruta que deseas probar en tu aplicación FastAPI. Por ejemplo, si quieres probar la ruta `/users`, ingresa `http://127.0.0.1:8000/users`.
 
