@@ -1,31 +1,32 @@
-# Desafío de Entrevista para Llevar a Casa
-Tenemos 2 tablas básicas: usuario y dirección. Utiliza el framework FastAPI y crea servicios REST para permitir la administración de usuarios.
+# Take Home Interview Challenge
+We have 2 basic tables: user and address. Use the FastAPI framework and create REST services to enable user management.
 
-## Requisitos de la API REST:
-1. Crear usuarios con parámetros de entrada: usuario (id, nombre, apellido, correo electrónico y contraseña), y direcciones (id, dirección_1, dirección_2, ciudad, estado, código postal, país).
-2. Recuperar usuarios por país.
+## REST API requirements:
+1. create users with input parameters: user (id, first_name, last_name, email and password), and addresses (id, address_1, address_2, city, state, zip code, country).
+Retrieve users by country.
 
-Para la comunicación entre servicios, se pueden utilizar llamadas REST o gRPC para: Obtener información de usuario / Código de prueba de cliente de ejemplo.
+For inter-service communication, REST or gRPC calls can be used to: Retrieve user information / Sample client test code.
 
-## Configuración del Proyecto
-A continuación se muestra una guía básica para configurar y ejecutar el proyecto:
+## Project Configuration
+Below is a basic guide to configure and run the project:
 
-### Instalación
-1. Clona el repositorio.
+### Installation
+1. Clone the repository.
 `git clone https://github.com/tu-usuario/nombre-del-proyecto.git`
 
-2. Ve al directorio del proyecto.
-`cd nombre-del-proyecto`
+2. Go to the project directory.
+`cd project-name`.
 
-3. Instala las dependencias.
+3. Install the dependencies.
 `pip install -r requirements.txt`
 
-### Ejecución
-1. Inicia el servidor FastAPI.
+### Execution
+1. Start the FastAPI server.
 `uvicorn main:app --reload`
 
-### Uso
-- Para crear un usuario, realiza una solicitud POST a `/api/users` con los datos del usuario en el cuerpo de la solicitud en formato JSON. El siguiente es un ejemplo:
+### Usage
+- To create a user, make a POST request to `/api/users` with the user data in the body of the request in JSON format. The following is an example:
+- To retrieve users by country, make a GET request to `/api/users/{country}`.
 
 ```
 {
@@ -48,41 +49,40 @@ A continuación se muestra una guía básica para configurar y ejecutar el proye
 }
 ```
 
-- Para recuperar usuarios por país, realiza una solicitud GET a `/api/users/{country}`.
+**Step 1: Run your FastAPI application**.
+Before testing your application with Postman, make sure your FastAPI application is running. To run it, open a terminal, navigate to the root directory of your project and run the following command (make sure the dependencies are installed and the server is running):
 
-**Paso 1: Ejecuta tu aplicación FastAPI**
-Antes de probar tu aplicación con Postman, asegúrate de que tu aplicación FastAPI esté en funcionamiento. Para ejecutarla, abre una terminal, navega al directorio raíz de tu proyecto y ejecuta el siguiente comando (asegúrate de que las dependencias estén instaladas y el servidor esté en funcionamiento):
-
-```bash
+````bash
 uvicorn main:app --reload
 ```
 
-Esto iniciará tu aplicación en `http://127.0.0.1:8000`.
+This will start your application at `http://127.0.0.1:8000`.
 
-**Paso 2: Abre Postman**
-Abre la aplicación Postman en tu sistema. Si aún no tienes Postman instalado, puedes descargarlo e instalarlo desde [https://www.postman.com/](https://www.postman.com/).
+**Step 2: Open Postman
+Open the Postman application on your system. If you do not already have Postman installed, you can download and install it from [https://www.postman.com/](https://www.postman.com/).
 
-**Paso 3: Crea una nueva solicitud en Postman**
-- En Postman, crea una nueva solicitud haciendo clic en "New" en la esquina superior izquierda y selecciona "Request".
+**Step 3: Create a new application in Postman**.
+- In Postman, create a new request by clicking on "New" in the upper left corner and select "Request".
 
-**Paso 4: Configura la solicitud**
-- Asigna un nombre descriptivo a la solicitud en el campo "Request Name".
-- Selecciona el método HTTP adecuado (GET, POST) en el menú desplegable "HTTP Method".
-- En la barra de URL, ingresa la URL completa de la ruta que deseas probar en tu aplicación FastAPI. Por ejemplo, si quieres probar la ruta `/users`, ingresa `http://127.0.0.1:8000/users`.
+**Step 4: Configure the request
+- Assign a descriptive name to the request in the "Request Name" field.
+- Select the appropriate HTTP method (GET, POST) from the "HTTP Method" drop-down menu.
+- In the URL bar, enter the full URL of the route you want to test in your FastAPI application. For example, if you want to test the `/users` path, enter `http://127.0.0.1:8000/users`.
 
-**Paso 5: Agrega parámetros y datos (si es necesario)**
-- Si tu solicitud requiere parámetros o datos en el cuerpo de la solicitud, puedes configurarlos en las pestañas correspondientes en la parte inferior de la ventana de Postman.
+**Step 5: Add parameters and data (if necessary)**.
+- If your request requires parameters or data in the body of the request, you can configure them in the corresponding tabs at the bottom of the Postman window.
 
-**Paso 6: Envía la solicitud**
-- Haz clic en el botón "Send" (Enviar) para enviar la solicitud a tu aplicación FastAPI.
+**Step 6: Send the request
+- Click the "Send" button to send the request to your FastAPI application.
 
-**Paso 7: Observa la respuesta**
-- En la parte inferior de la ventana de Postman, verás la respuesta de tu aplicación FastAPI. Esto incluirá el código de estado HTTP, la respuesta JSON u otros datos relevantes.
+**Step 7: Observe the response**
+- At the bottom of the Postman window, you will see the response from your FastAPI application. This will include the HTTP status code, JSON response, or other relevant data.
 
-**Paso 8: Analiza la respuesta**
-- Examina la respuesta para asegurarte de que tu API esté funcionando correctamente y que los datos sean los esperados.
+**Step 8: Analyze the response**.
+- Examine the response to ensure that your API is working correctly and that the data is as expected.
 
-## Contacto:
+## Contact:
 - Jeisson Andres Castaño Aguirre
-- Estadístico Universidad Nacional de Colombia Sede Medellín
-- MBA Tecnológico de Monterrey
+- Mail: jeacastanoag@unal.edu.co
+- Estadístico de la Universidad Nacional de Colombia Sede Medellín
+- MBA del Tecnológico de Monterrey
